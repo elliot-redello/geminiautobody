@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spellane Auto Body | Expert Collision Repair in Worcester, MA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Custom Automotive Theme Colors */
+        :root {
+            --primary: #DC2626; /* Deep Red - Bold & Urgent */
+            --secondary: #1F2937; /* Dark Gray - Professional */
+            --accent: #F3F4F6; /* Light Gray - Clean */
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.85)), url('https://images.unsplash.com/photo-1599256872237-5dcc0fbe9668?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased scroll-smooth">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fa-solid fa-car-burst text-red-600 text-3xl"></i>
+                        <span class="font-bold text-2xl tracking-tight text-gray-900">SPELLANE <span class="text-red-600">AUTO BODY</span></span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-red-600 font-medium transition">Services</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-red-600 font-medium transition">Why Us</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-red-600 font-medium transition">Reviews</a>
+                    <a href="#faq" class="text-gray-600 hover:text-red-600 font-medium transition">FAQ</a>
+                    <a href="tel:5087560842" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-md font-bold transition shadow-lg flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> (508) 756-0842
+                    </a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg h-screen flex items-center justify-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center gap-12">
+            
+            <div class="w-full md:w-1/2 text-white text-center md:text-left space-y-6">
+                <div class="inline-block bg-red-600/90 text-white px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide mb-2">
+                    Serving Worcester County Since 1994
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Accidents Happen. <br>
+                    <span class="text-red-500">We Make It Like It Never Did.</span>
+                </h1>
+                <p class="text-lg text-gray-200 max-w-xl mx-auto md:mx-0">
+                    Your trusted collision repair experts on Wellington St. We handle the insurance paperwork, towing, and mechanical repairs so you can get back on the road fast.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-4 rounded-md font-bold shadow-xl transition transform hover:-translate-y-1">
+                        Get a Free Estimate
+                    </a>
+                    <a href="tel:5087560842" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white text-lg px-8 py-4 rounded-md font-bold transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Call Now
+                    </a>
+                </div>
+                <div class="pt-8 flex gap-6 justify-center md:justify-start opacity-80">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-green-400"></i> Licensed
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-file-signature text-blue-400"></i> Insurance Accepted
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 max-w-md bg-white rounded-xl shadow-2xl p-8 transform rotate-1 border-t-4 border-red-600">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Request an Estimate</h3>
+                <p class="text-gray-500 mb-6 text-sm">Fill out the form below and we'll contact you shortly to schedule an inspection.</p>
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thanks! This is a demo. In a real site, this would email Spellane Auto Body.');">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition" placeholder="(508) 555-0123">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Service Needed</label>
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-600 focus:border-transparent outline-none transition bg-white">
+                            <option>Collision Repair</option>
+                            <option>Dent/Scratch Removal</option>
+                            <option>Frame Straightening</option>
+                            <option>Other / Not Sure</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 rounded-lg shadow-lg transition duration-200">
+                        Request Callback
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="bg-gray-50 py-10 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <i class="fa-solid fa-location-dot text-red-600 text-3xl"></i>
+                    <h4 class="font-bold text-gray-900">Locally Owned</h4>
+                    <p class="text-sm text-gray-500">Worcester Based</p>
+                </div>
+                <div class="space-y-2">
+                    <i class="fa-solid fa-file-invoice-dollar text-red-600 text-3xl"></i>
+                    <h4 class="font-bold text-gray-900">Insurance Help</h4>
+                    <p class="text-sm text-gray-500">We Handle Claims</p>
+                </div>
+                <div class="space-y-2">
+                    <i class="fa-solid fa-clock text-red-600 text-3xl"></i>
+                    <h4 class="font-bold text-gray-900">Fast Turnaround</h4>
+                    <p class="text-sm text-gray-500">Back on Road ASAP</p>
+                </div>
+                <div class="space-y-2">
+                    <i class="fa-solid fa-wrench text-red-600 text-3xl"></i>
+                    <h4 class="font-bold text-gray-900">Expert Techs</h4>
+                    <p class="text-sm text-gray-500">Collision Specialists</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-red-600 font-bold tracking-wide uppercase text-sm">Our Expertise</h2>
+                <h3 class="mt-2 text-3xl md:text-4xl font-extrabold text-gray-900">Complete Auto Body Services</h3>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">From major collision damage to minor fender benders, we restore your vehicle to pre-accident condition.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition group">
+                    <div class="h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1626074127815-4df6c5d1e29e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Collision Repair" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Collision Repair</h4>
+                        <p class="text-gray-600 mb-4">Structural repairs, frame straightening, and panel replacement. We use professional equipment to ensure your car is safe and looks new.</p>
+                        <a href="#contact" class="text-red-600 font-semibold hover:text-red-700 inline-flex items-center">Learn more <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition group">
+                    <div class="h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1618588882803-b0728c114f6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Paint Services" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Paint & Refinishing</h4>
+                        <p class="text-gray-600 mb-4">Expert color matching and refinishing. Whether it's a scratch or a full respray, our paint booth ensures a flawless factory finish.</p>
+                        <a href="#contact" class="text-red-600 font-semibold hover:text-red-700 inline-flex items-center">Learn more <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition group">
+                    <div class="h-48 bg-gray-200 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1498887960847-2a5e46312788?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mechanical Repair" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Mechanical Repair</h4>
+                        <p class="text-gray-600 mb-4">Collision damage often affects more than just the body. We handle suspension, alignment, and mechanical fixes caused by the accident.</p>
+                        <a href="#contact" class="text-red-600 font-semibold hover:text-red-700 inline-flex items-center">Learn more <i class="fa-solid fa-arrow-right ml-2 text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="bg-gray-900 text-white py-20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-red-600 rounded-full opacity-10 blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-red-500 font-bold tracking-wide uppercase text-sm mb-2">Why Worcester Chooses Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-6">Honest Work, Fair Prices, High Quality.</h3>
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-600 text-white">
+                                    <i class="fa-solid fa-hand-holding-heart text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Insurance Stress Relief</h4>
+                                <p class="mt-2 text-gray-300">We deal with the insurance companies directly so you don't have to fight for your claim.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-600 text-white">
+                                    <i class="fa-solid fa-medal text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Experienced Craftsmanship</h4>
+                                <p class="mt-2 text-gray-300">With decades of experience in Worcester, we treat every car like our own family is driving it.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-600 text-white">
+                                    <i class="fa-solid fa-location-crosshairs text-xl"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Convenient Location</h4>
+                                <p class="mt-2 text-gray-300">Located centrally at 18 Wellington St, making drop-off and pickup easy for Worcester residents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1552168324-d612d77725e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mechanic working" class="rounded-lg shadow-2xl border-4 border-gray-700">
+                    <div class="absolute -bottom-6 -left-6 bg-white text-gray-900 p-6 rounded-lg shadow-xl hidden md:block">
+                        <p class="text-sm font-bold text-gray-500 uppercase">Customer Rating</p>
+                        <div class="flex items-center gap-2 mt-1">
+                            <span class="text-3xl font-extrabold text-red-600">5.0</span>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-1">Based on local feedback</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900">Simple 3-Step Process</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center relative">
+                <div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-1 bg-gray-200 -z-0"></div>
+
+                <div class="relative z-10">
+                    <div class="w-24 h-24 bg-white border-4 border-red-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <span class="text-3xl font-bold text-red-600">1</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Contact Us</h4>
+                    <p class="text-gray-500 px-4">Call (508) 756-0842 or use our form. We can arrange towing if your car isn't drivable.</p>
+                </div>
+                <div class="relative z-10">
+                    <div class="w-24 h-24 bg-white border-4 border-red-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <span class="text-3xl font-bold text-red-600">2</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Estimate & Approval</h4>
+                    <p class="text-gray-500 px-4">We inspect the damage, provide a fair quote, and handle the insurance approval process for you.</p>
+                </div>
+                <div class="relative z-10">
+                    <div class="w-24 h-24 bg-white border-4 border-red-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <span class="text-3xl font-bold text-red-600">3</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Repair & Pickup</h4>
+                    <p class="text-gray-500 px-4">Our experts repair your vehicle. You pick it up looking like the accident never happened.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h4 class="text-lg font-bold text-gray-900 mb-4">Proudly Serving Worcester & Surrounding Towns</h4>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Worcester</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Shrewsbury</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Holden</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Millbury</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Auburn</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Grafton</span>
+                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Leicester</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center mb-16">What Our Customers Say</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-xl relative">
+                    <i class="fa-solid fa-quote-left text-red-600 text-4xl absolute top-6 left-6 opacity-30"></i>
+                    <p class="text-gray-300 italic mb-6 pt-6">"Spellane Auto Body made a stressful situation so much easier. They handled all the back-and-forth with my insurance company and my bumper looks brand new. Highly recommend!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center font-bold">M</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-white">Mike R.</p>
+                            <p class="text-xs text-gray-400">Worcester, MA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl relative">
+                    <i class="fa-solid fa-quote-left text-red-600 text-4xl absolute top-6 left-6 opacity-30"></i>
+                    <p class="text-gray-300 italic mb-6 pt-6">"Great local shop. Bill was very transparent about the pricing and timeline. It's hard to find honest mechanics these days, but these guys are the real deal."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center font-bold">S</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-white">Sarah T.</p>
+                            <p class="text-xs text-gray-400">Shrewsbury, MA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-xl relative">
+                    <i class="fa-solid fa-quote-left text-red-600 text-4xl absolute top-6 left-6 opacity-30"></i>
+                    <p class="text-gray-300 italic mb-6 pt-6">"Fast service and excellent work. I had a pretty bad dent in my door and they fixed it perfectly. You can't even tell it was ever damaged."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center font-bold">D</div>
+                        <div class="ml-3">
+                            <p class="font-bold text-white">David L.</p>
+                            <p class="text-xs text-gray-400">Auburn, MA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h3>
+            <div class="space-y-6">
+                <div class="border-l-4 border-red-600 bg-gray-50 p-6 rounded-r-lg">
+                    <h4 class="font-bold text-lg text-gray-900">Do you work with my insurance company?</h4>
+                    <p class="mt-2 text-gray-600">Yes, we work with all major insurance providers. We can communicate directly with them to handle the appraisal and billing process, making it hassle-free for you.</p>
+                </div>
+                <div class="border-l-4 border-red-600 bg-gray-50 p-6 rounded-r-lg">
+                    <h4 class="font-bold text-lg text-gray-900">Do I need an appointment for an estimate?</h4>
+                    <p class="mt-2 text-gray-600">While walk-ins are welcome, we recommend calling ahead at (508) 756-0842 to ensure someone is available to inspect your vehicle immediately.</p>
+                </div>
+                <div class="border-l-4 border-red-600 bg-gray-50 p-6 rounded-r-lg">
+                    <h4 class="font-bold text-lg text-gray-900">How long will the repair take?</h4>
+                    <p class="mt-2 text-gray-600">Repair time depends on the severity of the damage and parts availability. Once we inspect your vehicle, we will provide you with a realistic estimated completion date.</p>
+                </div>
+                <div class="border-l-4 border-red-600 bg-gray-50 p-6 rounded-r-lg">
+                    <h4 class="font-bold text-lg text-gray-900">Do you offer towing?</h4>
+                    <p class="mt-2 text-gray-600">Yes, if your car is not safe to drive, give us a call and we can help arrange towing to our shop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-red-600 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to fix your car?</h2>
+            <p class="text-xl text-red-100 mb-8">Don't wait. Contact Spellane Auto Body today for a free estimate.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:5087560842" class="bg-white text-red-600 hover:bg-gray-100 text-lg px-10 py-4 rounded-full font-bold shadow-lg transition">
+                    Call (508) 756-0842
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-white text-xl font-bold mb-4">Spellane Auto Body</h3>
+                    <p class="mb-4">Worcester's trusted choice for collision repair. We are committed to quality, safety, and customer satisfaction.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-google text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot mr-2"></i> 18 Wellington St, Worcester, MA 01610</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone mr-2"></i> (508) 756-0842</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Hours</h4>
+                    <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                    <p>Sat - Sun: Closed</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-sm text-center">
+                <p>&copy; 2024 Spellane Auto Body. All rights reserved. <span class="block mt-2 text-xs text-gray-600">This is a demo website.</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
